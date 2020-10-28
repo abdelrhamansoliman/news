@@ -1,0 +1,9 @@
+.news-card{
+    position: relative;
+    overflow: hidden;
+}
+a{
+   list-style: none;
+   text-decoration: none;
+    
+}

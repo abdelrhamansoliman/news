@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+    
+        <div *ngFor="let n of newsContainer;let i=index" class="col-md-4">
+            <div class="news-card">
+                <a [routerLink]="['/details',i]">
+           <img [src]="n.urlToImage" class="img-fluid p-4">
+            <h5>{{n.title}}</h5>
+                </a>
+        </div>
+        </div>
+    </div>
+</div>

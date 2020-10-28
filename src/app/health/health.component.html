@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let h of healthNew; let d=index" class="col-md-4">
+             <div class="new">
+                 <a [routerLink]="['/health-det',d]">
+                 <img [src]="h.urlToImage" class="img-fluid">
+
+                <h4>{{h.title}}</h4>
+            </a>
+             </div>   
+
+        </div>
+
+    </div>
+
+</div>

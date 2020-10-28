@@ -1,0 +1,19 @@
+
+<div class="container">
+    <form [formGroup]='signInForm'>
+        <div class="signin mx-auto m-5">
+        <div class="form-group">
+            <label>User name</label>
+            <input type="text" formControlName="userName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" formControlName="password" class="form-control ">
+        </div>
+        <button [disabled]='signInForm.invalid' type="submit" class="btn btn-info m-4"> Log In </button>
+        <a [routerLink]="['/signup']">I don't have account</a>
+    </div>
+    
+    </form>
+
+</div>
